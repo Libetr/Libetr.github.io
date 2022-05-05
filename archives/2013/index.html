@@ -48,14 +48,18 @@
 
 </head>
 
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
-    <div class="left-col" q-class="show:isShow">
+
+    
+
+    <div class="left-col" q-class="show:isShow"style="background: url(/img/BackgroundPicture.jpg) no-repeat 100%;background-size:cover;">
       
 
 
-<div class="overlay" style="background: #4d4d4d;"></div>
+<div class="overlay" style="background: rgba(0,0,0,0);"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -69,13 +73,13 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/" target="_blank">主页</a></li>
+				<li><a href="/" >主页</a></li>
 			
-				<li><a href="https://zhousiwei.gitee.io/ibooks/" target="_blank">技术笔记</a></li>
+				<li><a target="_blank" rel="noopener" href="https://zhousiwei.gitee.io/ibooks/" >技术笔记</a></li>
 			
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" target="_blank">随笔</a></li>
+				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" >随笔</a></li>
 			
-				<li><a href="/tags/git/" target="_blank">Git</a></li>
+				<li><a href="/tags/git/" >Git</a></li>
 			
 			</ul>
 		</nav>
@@ -85,8 +89,6 @@
 					<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
 				
 			
-				
-					<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
 				
 			
 				
@@ -99,22 +101,22 @@
 				
 					
 						<a class="github" href="#" 
-												title="GitHub" target="_blank"><i class="icon-github"></i></a>
+												title="GitHub" ><i class="icon-github"></i></a>
 					
 				
 					
 						<a class="github" href="#" 
-												title="GitHub" target="_blank"><i class="icon-github"></i></a>
+												title="GitHub" ><i class="icon-github"></i></a>
 					
 				
 					
 						<a class="gitee" href="#" 
-												title="gitee" target="_blank"><i class="icon-gitee"></i></a>
+												title="gitee" ><i class="icon-gitee"></i></a>
 					
 				
 					
 						<a class="jianshu" href="#" 
-												title="jianshu" target="_blank"><i class="icon-jianshu"></i></a>
+												title="jianshu" ><i class="icon-jianshu"></i></a>
 					
 				
 			</div>
@@ -123,8 +125,9 @@
 	</header>		
 </div>
 
-    </div>
-    <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
+        </div>
+    <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse"style="background: url(/img/BackgroundPicture.jpg) no-repeat 100%;background-size:cover;opacity:0.7;">
+
       
       
       <a class="forkMe" style="position:absolute;z-index:999;top:0;right:0.5em;" 
@@ -134,7 +137,7 @@
       
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+  	<div class="overlay js-overlay" style="background: rgba(0,0,0,0)"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -240,8 +243,8 @@
   
     <h1 itemprop="name">
 	
-	  <a class="archive-article-title" href="/2013/12/02/hexo+github/" target="_blank">文章名称</a>
-  
+	  <a class="archive-article-title" href="/2013/12/02/hexo+github/">文章名称</a>
+	
     </h1>
   
 
@@ -315,15 +318,6 @@
 	
   
   
-	
-	<span id="busuanzi_container_site_pv" style="display:none">
-		本站总访问量<span id="busuanzi_value_site_pv"></span>次	
-	        <span class="post-meta-divider" >|</span>
-	</span>
-  	<span id="busuanzi_container_site_uv" style='display:none'>
-  		本站访客数<span id="busuanzi_value_site_uv"></span>人
-  	</span>
-  
 </footer>
 
     </div>
@@ -335,7 +329,7 @@
 		isArchive: true,
 		isTag: false,
 		isCategory: false,
-		open_in_new: true,
+		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -377,8 +371,6 @@
       
     
       
-      
-      
     
       
       
@@ -390,15 +382,13 @@
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -431,11 +421,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
@@ -481,64 +471,6 @@
     	</section>
     
 
-    
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="https://zhousiwei.gitee.io/ibooks/" target="_blank" 
-                class="search-title" title="记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析">
-                
-                  <img src="https://zhousiwei.gitee.io/ibooks/favicon.ico">
-                
-                技术笔记
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://github.com/JoeyBling" target="_blank" 
-                class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                GitHub
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://gitee.com/zhousiwei" target="_blank" 
-                class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                码云
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://www.jianshu.com/u/02cbf31a043a" target="_blank" 
-                class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                简书
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://blog.csdn.net/qq_30930805" target="_blank" 
-                class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                CSDN
-              </a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
     
 
     
