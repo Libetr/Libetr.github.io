@@ -17,13 +17,11 @@
 <meta property="og:site_name" content="棒棒糖">
 <meta property="og:description" content="git命令与报错处理">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2022/05/05/Git/ssl.png">
 <meta property="article:published_time" content="2022-05-04T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-05-05T08:26:44.723Z">
+<meta property="article:modified_time" content="2022-05-05T10:16:31.279Z">
 <meta property="article:author" content="Lau">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2022/05/05/Git/ssl.png">
   
     <link rel="alternative" href="/atom.xml" title="棒棒糖" type="application/atom+xml">
   
@@ -207,7 +205,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">69字</span>
+      <span class="post-count">76字</span>
     </span>
   </span>
 
@@ -232,7 +230,10 @@
 
 <h3 id="1、GitHub克隆到本地"><a href="#1、GitHub克隆到本地" class="headerlink" title="1、GitHub克隆到本地"></a>1、GitHub克隆到本地</h3><p>GitHub仓库拷贝到本地</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#url为仓库地址</span></span><br><span class="line">git <span class="built_in">clone</span> url</span><br></pre></td></tr></table></figure>
-<p>如出现下图错误<br><img src="/2022/05/05/Git/ssl.png"><br>这种错误要关闭ssl验证<br>输入:</p>
+<p>如出现下图错误</p>
+<!-- ![](Git/ssl.png) -->
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">OpenSSL SSL_read: Connection was reset, errno 10054</span><br></pre></td></tr></table></figure>
+<p>这种错误要关闭ssl验证,输入:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># git config --global http.sslVerify &quot;false&quot;</span></span><br></pre></td></tr></table></figure>
 <p>此时，再执行git操作即可。</p>
 
@@ -374,18 +375,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2022/05/05/Hexo%E5%91%BD%E4%BB%A4/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Hexo命令
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/05/05/hexo+github/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hexo部署到GitHub</div>
+    <a href="/2022/05/05/Hexo%E5%91%BD%E4%BB%A4/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hexo命令</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -544,11 +536,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
