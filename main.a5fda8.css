@@ -185,6 +185,7 @@ body {
     line-height: 1.5;
     color: #333;
     background-color: #fff;
+   
     min-height: 100%
 }
 
@@ -719,7 +720,8 @@ textarea {
 }
 
 body {
-    background: #eaeaea
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url('/img/BackgroundPicture.jpg') no-repeat 0% 0%/ cover;
 }
 
 #container,
@@ -770,8 +772,20 @@ html {
     background: hsla(0, 0%, 100%, .3)
 }
 
+/* .left-col {
+    background: rgb(156, 125, 125);
+    width: 300px;
+    position: fixed;
+    opacity: 1;
+    transition: all .2s ease-in;
+    height: 100%;
+    z-index: 999;
+    overflow: hidden;
+    overflow-y: auto;
+    margin-bottom: 15px
+} */
 .left-col {
-    background: #fff;
+    background-color: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
     width: 300px;
     position: fixed;
     opacity: 1;
@@ -808,7 +822,7 @@ html {
 }
 
 .left-col #header a {
-    color: #696969
+    color: #ffffff
 }
 
 .left-col #header a:hover {
@@ -2094,7 +2108,8 @@ pre .id {
     border: 1px solid #ddd;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    background: #fff;
+    /* background: #fff; */
+    background: rgba(255, 255, 255, .5);
     transition: all .2s ease-in
 }
 
@@ -2264,7 +2279,7 @@ pre .id {
 .article-entry p code {
     padding: 1px 3px;
     margin: 0 3px;
-    background: #ddd;
+    background: #f1d88cbd;
     border: 1px solid #ccc;
     font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace;
     word-wrap: break-word;
