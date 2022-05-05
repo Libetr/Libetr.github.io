@@ -10,15 +10,15 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="git命令与报错处理">
+  <meta name="description" content="git命令与报错处理软件为Git Bash">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git使用">
 <meta property="og:url" content="http://example.com/2022/05/05/Git/index.html">
 <meta property="og:site_name" content="棒棒糖">
-<meta property="og:description" content="git命令与报错处理">
+<meta property="og:description" content="git命令与报错处理软件为Git Bash">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-05-04T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-05-05T10:16:31.279Z">
+<meta property="article:modified_time" content="2022-05-05T12:55:43.854Z">
 <meta property="article:author" content="Lau">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
@@ -205,7 +205,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">76字</span>
+      <span class="post-count">120字</span>
     </span>
   </span>
 
@@ -225,16 +225,17 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>git命令与报错处理</p>
+    <p>git命令与报错处理<br>软件为Git Bash</p>
 <span id="more"></span>
 
-<h3 id="1、GitHub克隆到本地"><a href="#1、GitHub克隆到本地" class="headerlink" title="1、GitHub克隆到本地"></a>1、GitHub克隆到本地</h3><p>GitHub仓库拷贝到本地</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#url为仓库地址</span></span><br><span class="line">git <span class="built_in">clone</span> url</span><br></pre></td></tr></table></figure>
-<p>如出现下图错误</p>
-<!-- ![](Git/ssl.png) -->
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">OpenSSL SSL_read: Connection was reset, errno 10054</span><br></pre></td></tr></table></figure>
-<p>这种错误要关闭ssl验证,输入:</p>
+<h3 id="1、Git命令"><a href="#1、Git命令" class="headerlink" title="1、Git命令"></a>1、Git命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init        <span class="comment">#初始化git仓库</span></span><br><span class="line">git <span class="built_in">clone</span> url   <span class="comment">#GitHub仓库拷贝到本地   url为仓库地址</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h2><!-- ![](Git/ssl.png) -->
+<h4 id="出现：OpenSSL-SSL-read-Connection-was-reset-errno-10054"><a href="#出现：OpenSSL-SSL-read-Connection-was-reset-errno-10054" class="headerlink" title="出现：OpenSSL SSL_read: Connection was reset, errno 10054"></a>出现：OpenSSL SSL_read: Connection was reset, errno 10054</h4><p>这种错误要关闭ssl验证,输入:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># git config --global http.sslVerify &quot;false&quot;</span></span><br></pre></td></tr></table></figure>
+<p>此时，再执行git操作即可。</p>
+<h4 id="出现：Failed-to-connect-to-github-com-port-443-connection-timed-out"><a href="#出现：Failed-to-connect-to-github-com-port-443-connection-timed-out" class="headerlink" title="出现：Failed to connect to github.com port 443:connection timed out"></a>出现：Failed to connect to github.com port 443:connection timed out</h4><p>输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># git config --global --unset http.proxy</span></span><br><span class="line"><span class="comment"># git config --global --unset https.proxy</span></span><br></pre></td></tr></table></figure>
 <p>此时，再执行git操作即可。</p>
 
     
@@ -404,7 +405,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81GitHub%E5%85%8B%E9%9A%86%E5%88%B0%E6%9C%AC%E5%9C%B0"><span class="toc-number">1.</span> <span class="toc-text">1、GitHub克隆到本地</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81Git%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">1、Git命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86"><span class="toc-number"></span> <span class="toc-text">错误处理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%87%BA%E7%8E%B0%EF%BC%9AOpenSSL-SSL-read-Connection-was-reset-errno-10054"><span class="toc-number">0.1.</span> <span class="toc-text">出现：OpenSSL SSL_read: Connection was reset, errno 10054</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%87%BA%E7%8E%B0%EF%BC%9AFailed-to-connect-to-github-com-port-443-connection-timed-out"><span class="toc-number">0.2.</span> <span class="toc-text">出现：Failed to connect to github.com port 443:connection timed out</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
