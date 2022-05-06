@@ -720,8 +720,8 @@ textarea {
 }
 
 body {
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    url('/img/BackgroundPicture.jpg') no-repeat 0% 0%/ cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)),
+    url('/img/BackgroundPicture.jpg') no-repeat 0% 0%/ cover; 
 }
 
 #container,
@@ -769,7 +769,7 @@ html {
 }
 
 .mid-col.show .article {
-    background: hsla(0, 0%, 100%, .3)
+    background: hsla(0, 0%, 100%, .5)
 }
 
 /* .left-col {
@@ -2109,7 +2109,7 @@ pre .id {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     /* background: #fff; */
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, .8);
     transition: all .2s ease-in
 }
 
