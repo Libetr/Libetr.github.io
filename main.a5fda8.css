@@ -3451,12 +3451,12 @@ pre .id {
         justify-content: space-around;
         position: relative;
         z-index: 1;
-        border: 1px solid #a0a0a0;
+        border: 1px solid #5d2c00;
         border-radius: 3px
     }
 
     .header-menu li {
-        border-left: 1px solid #a0a0a0
+        border-left: 1px solid #5d2c00
     }
 
     .header-menu li:first-child {
@@ -3473,7 +3473,7 @@ pre .id {
         text-overflow: ellipsis;
         white-space: nowrap;
         display: block;
-        color: #a0a0a0
+        color: #5d2c00
     }
 
     .header-menu li a.active {
