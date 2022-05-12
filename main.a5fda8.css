@@ -826,7 +826,7 @@ html {
 }
 
 .left-col #header a:hover {
-    color: #b0a0aa
+    color: #f19b10
 }
 
 .left-col #header .header-subtitle {
@@ -2714,7 +2714,7 @@ pre .id {
 }
 
 .jump-container:hover .icon-back {
-    background: rgba(36, 193, 246, .9)
+    background: rgba(246, 133, 3, .9)
 }
 
 .jump-container,
@@ -2723,7 +2723,8 @@ pre .id {
     cursor: pointer;
     width: 40px;
     height: 40px;
-    opacity: .8
+    opacity: .8;
+    border-radius: 20px;
 }
 
 .jump-plan-container {
@@ -2747,28 +2748,29 @@ pre .id {
 .mod-side-operation__jump-to-top .icon-back {
     transition: .3s;
     color: #fff;
-    background: #ccc;
+    background: rgb(235, 170, 66);
     transform: rotate(90deg);
     font-size: 32px;
     line-height: 40px;
     width: 40px;
     text-align: center;
-    display: block
+    display: block;
+    border-radius: 20px;
 }
 
 .mod-side-operation__jump-to-top .icon-back:hover {
-    background: #24c1f6;
-    color: #24c1f6
+    background: #f48804;
+    color: #ff8c00
 }
 
 .toc-container.tooltip-left {
-    background: #ccc;
+    background: rgb(235, 170, 66);
     margin-top: 10px;
     transition: .3s
 }
 
 .toc-container.tooltip-left:hover {
-    background: rgba(36, 193, 246, .9)
+    background: rgba(246, 133, 3, 1)
 }
 
 .toc-container.tooltip-left .icon-font {
@@ -2792,7 +2794,7 @@ pre .id {
     min-width: 200px;
     width: auto;
     font-size: 14px;
-    text-shadow: 1px 1px 1px #398199;
+    text-shadow: 1px 1px 1px #d77f14;
     bottom: -10px;
     transform-origin: 100% 100%;
     transform: translate3d(0, -10px, 0) rotate3d(1, 1, 1, -30deg)
@@ -2838,7 +2840,7 @@ pre .id {
 }
 
 .tooltip-left .tooltip:hover a.share-outer {
-    background: #24c1f6
+    background: #d77f14
 }
 
 @keyframes pulse {
@@ -2853,7 +2855,7 @@ pre .id {
 
 .tooltip-left .tooltip-content {
     position: absolute;
-    background: rgba(36, 193, 246, .9);
+    background: rgba(246, 124, 9, 1);
     z-index: 9999;
     width: 200px;
     bottom: 50%;
